@@ -25,6 +25,9 @@ async def on_message(message):
             await message.channel.send('8ch is gud')
         else:
             await message.channel.send('H is gud')
+    
+    if content in ['h is gud', 'H is gud', '8ch is gud']:
+        await message.channel.send("that's my line :(")
 
     await bot.process_commands(message)
 
