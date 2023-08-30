@@ -41,6 +41,9 @@ async def on_message(message):
 
     if content == 'awesome':
         await message.channel.send('hawesome')
+    
+    if content == 'h is h':
+        await message.channel.send("https://cdn.discordapp.com/attachments/1145410835582287945/1146444794571264092/image.png")
 
     await bot.process_commands(message)
 
