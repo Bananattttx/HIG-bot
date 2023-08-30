@@ -21,7 +21,7 @@ async def on_message(message):
 
     content = message.content.lower()
 
-    if content in ['h', 'H', '8ch']:
+    if content in ['h', 'H', '8ch', 'aitch', '🇭']:
         if random.randint(1, 100) == 1:
             await message.channel.send('8ch is gud')
         else:
