@@ -30,7 +30,7 @@ async def on_message(message):
     if content in ['h is gud', 'H is gud', '8ch is gud']:
         await message.channel.send("that's my line :(")
 
-    if content in ['h is mid', 'h is mediocre', 'h is bad', 'h sucks']:
+    if content in ['h is mid', 'h is mediocre', 'h is bad', 'h sucks', 'fuck h]:
         if random.randint(1, 2) == 1:
             if content in ['h sucks']:
                 await message.channel.send("no it dosen't")
@@ -44,6 +44,12 @@ async def on_message(message):
     
     if content == 'h is h':
         await message.channel.send("https://cdn.discordapp.com/attachments/1145410835582287945/1146444794571264092/image.png")
+    
+    if content == 'gh':
+        if random.randint(1,2) == 1:
+            await message.channel.send("g🤝h")
+        else:
+            await message.channel.send("H is gud, G is chill")
 
     await bot.process_commands(message)
 
