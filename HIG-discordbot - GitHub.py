@@ -1,4 +1,5 @@
 import discord
+import random
 from discord.ext import commands
 
 TOKEN = '###'
@@ -17,8 +18,13 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    if message.content.lower() == 'h':
-        await message.channel.send('H is gud')
+    content = message.content.lower()
+
+    if content in ['h', 'H', '8ch']:
+        if random.randint(1, 100) == 1:
+            await message.channel.send('8ch is gud')
+        else:
+            await message.channel.send('H is gud')
 
     await bot.process_commands(message)
 
