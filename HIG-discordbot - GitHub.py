@@ -29,6 +29,18 @@ async def on_message(message):
     if content in ['h is gud', 'H is gud', '8ch is gud']:
         await message.channel.send("that's my line :(")
 
+    if content in ['h is mid', 'h is mediocre', 'h is bad', 'h sucks']:
+        if random.randint(1, 2) == 1:
+            if content in ['h sucks']:
+                await message.channel.send("no it dosen't")
+            else:
+                await message.channel.send("no it's not")
+        else:
+            await message.channel.send("𝙉𝙊𝙋𝙀")
+
+    if content == 'awesome':
+        await message.channel.send('hawesome')
+
     await bot.process_commands(message)
 
 bot.run(TOKEN)
