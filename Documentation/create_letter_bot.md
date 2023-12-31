@@ -27,7 +27,9 @@ this requires a few more steps to set up
 
 ## the code
 1. download this repo as a zip
+
 ![image6](images/image6.png)
+
 2. extract the zip and move the `Template` folder out of the folder
 3. rename the `Template` folder to the name of your bot
 4. fill in `your_bot.py` with your details
