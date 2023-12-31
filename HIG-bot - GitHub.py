@@ -14,5 +14,5 @@ subreddit = reddit.subreddit("TheLetterH")
 
 for comment in subreddit.stream.comments(skip_existing=True):
     if comment.author and comment.author.name == "h-bot-model-h" and comment.body in modelh:
-        comment.reply("H is gud")
-        print("new comment")
+        comment.reply("H is gud, u/PedroGabrielLima13 is not")
+        print(f"new comment: https://www.reddit.com{comment.submission.permalink}")
