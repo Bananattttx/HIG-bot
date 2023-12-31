@@ -3,7 +3,9 @@ this is a guide on how to create a lettor bot in PRAW (Python Reddit API Wrapper
 ## setting up the bot
 ### 1. create a new reddit account
 go to reddit.com (sign out if your already logged in) and create a new account for your bot
+
 ![image1](images/image1.png)
+
 #### signing up with email
 this is the easiest way to create a bot account, no additional steps required
 
@@ -11,18 +13,25 @@ this is the easiest way to create a bot account, no additional steps required
 this requires a few more steps to set up
 1. sign out of your account
 2. when signing back in, click `forgot password`
+
 ![image2](images/image2.png)
+
 3. enter the username of your new bot account, and the email with your google account/apple id
 4. check your email, they should have sent you an email to reset your password
 5. go on the link to reset your password, and enter the password you want for this bot account
+
 ![image3](images/image3.png)
+
 6. go to reddit.com and sign back into your account
 
 ### 2. add a bot to your bot account
 1. go to https://old.reddit.com/prefs/apps/ and click `are you a developer? create an app...`
 2. fill in the details with this guide:
+
 ![image4](images/image4.png)
+
 3. click `create app` and save these:
+
 ![image5](images/image5.png)
 
 ## the code
