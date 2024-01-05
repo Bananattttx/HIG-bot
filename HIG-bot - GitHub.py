@@ -20,8 +20,9 @@ user_ping = "<@###>"
 H = reddit.subreddit("TheLetterH")
 bots = reddit.subreddit("theletterbots")
 
-# reply to u/h-bot-model-h in r/theletterh
+
 for comment in H.stream.comments(skip_existing=True):
+    # reply to u/h-bot-model-h in r/theletterh
     if comment.author and comment.author.name == "h-bot-model-h" and comment.body in modelh:
         if random.randint(1, 100) == 1:
             # 1 in 100 chance
@@ -34,7 +35,18 @@ for comment in H.stream.comments(skip_existing=True):
         
         post_url = f"https://www.reddit.com{comment.submission.permalink}"
         print(f"new comment: {post_url}")
-        
+
         # post logs in discord channel
         webhook = DiscordWebhook(url=webhook_url, content=f"{user_ping} \n new comment: <{post_url}>")
+        response = webhook.execute()
+    
+    # reply to u/i-bot9000 saying "**"H is gud"** - u/hig-bot" in r/theletterh
+    if comment.author and comment.author.name == "i-bot9000" and comment.body == '**"H is gud"** - u/HIG-bot':
+        comment.reply('"HIU" - u/i-bot9000')
+
+        post_url = f"https://www.reddit.com{comment.submission.permalink}"
+        print(f"new quote comment: {post_url}")
+
+        # post logs in discord channel
+        webhook = DiscordWebhook(url=webhook_url, content=f"{user_ping} \n new quote comment: <{post_url}>")
         response = webhook.execute()
