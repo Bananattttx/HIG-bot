@@ -10,7 +10,7 @@ main_responses = ["H is gud", "8ch is gud", "H is gud, u/PedroGabrielLima13 is n
 reddit = praw.Reddit(
     client_id="###",
     client_secret="###",
-    user_agent="HIG-bot by u/BananattttxNew",
+    user_agent="HIG-bot by u/blahajttttx",
     username="HIG-bot",
     password="###"
 )
