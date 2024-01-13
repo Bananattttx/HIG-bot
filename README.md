@@ -1,4 +1,8 @@
 # HIG-bot
-H is gud bot, because H is gud
+a reddit bot themed on the letter H
+## HIG-bot responces
+view the HIG-bot responses [here](https://gist.github.com/Bananattttx/d226bd0e1e1dec4d007442e0c7ce3b42)
 
-invite HIG-discordbot to your server: https://discord.com/oauth2/authorize?client_id=1146417069814972478&scope=bot&permissions=2048
+# HIG-discordbot
+a discord bot themed on the letter H\
+add HIG-discordbot to your server [here](https://discord.com/oauth2/authorize?client_id=1146417069814972478&scope=bot&permissions=2048)
