@@ -49,3 +49,14 @@ for comment in H.stream.comments(skip_existing=True):
         # post logs in discord channel
         webhook = DiscordWebhook(url=webhook_url, content=f"{user_ping} \n new quote comment: <{post_url}>")
         response = webhook.execute()
+
+for comment in reddit.comment_stream():
+    # reply to all comments saying "H" not in r/theletterH and not from u/PedroGabrielLima13
+    if comment.body == 'H' and comment.subreddit != H and comment.author.name != "PedroGabrielLima13":
+        comment.reply('H is gud')
+
+        comment_url = f"https://www.reddit.com{comment.permalink}"
+        print(f"new H comment: {comment_url}")
+        
+        webhook = DiscordWebhook(url=webhook_url, content=f"new H comment: <{comment_url}>")
+        response = webhook.execute()
