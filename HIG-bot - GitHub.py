@@ -18,7 +18,6 @@ webhook_url = "https://discord.com/api/webhooks/###"
 user_ping = "<@###>"
 
 H = reddit.subreddit("TheLetterH")
-bots = reddit.subreddit("theletterbots")
 
 
 for comment in H.stream.comments(skip_existing=True):
