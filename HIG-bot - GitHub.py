@@ -18,7 +18,7 @@ webhook_url = "https://discord.com/api/webhooks/###"
 user_ping = "<@###>"
 
 H = reddit.subreddit("TheLetterH")
-
+no_reply = [reddit.subreddit("AskOuija")]
 
 for comment in H.stream.comments(skip_existing=True):
     # reply to u/h-bot-model-h in r/theletterh
@@ -52,7 +52,7 @@ for comment in H.stream.comments(skip_existing=True):
 
 for comment in reddit.comment_stream():
     # reply to all comments saying "H" not in r/theletterH and not from u/PedroGabrielLima13
-    if comment.body == 'H' and comment.subreddit != H and comment.author.name != "PedroGabrielLima13":
+    if comment.body == 'H' and comment.subreddit != H and comment.subreddit not in no_reply and comment.author.name != "PedroGabrielLima13":
         comment.reply('H is gud')
 
         comment_url = f"https://www.reddit.com{comment.permalink}"
