@@ -12,3 +12,11 @@ HIG_ping = "###"
 
 HIG_token = "###"
 HIG_test_token = "###"
+
+model_figure = praw.Reddit(
+    client_id="###",
+    client_secret="###",
+    user_agent="h :3",
+    username="###",
+    password="###"
+)
