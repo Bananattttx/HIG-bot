@@ -31,7 +31,8 @@ for comment in H.stream.comments(skip_existing=True):
         print(f"new comment: {post_url}")
 
         # post logs in discord channel
-        webhook = DiscordWebhook(url=assets.HIG_webhook, content=f"{assets.HIG_ping} \n new comment: <{post_url}>")
+        webhook_text = f"{assets.HIG_ping} \n # new post in r/theletterh \n **{comment.body}**  |  u/{comment.author} \n <{post_url}>"
+        webhook = DiscordWebhook(url=assets.HIG_webhook, content=webhook_text)
         response = webhook.execute()
     
     # reply to u/i-bot9000 saying "**"H is gud"** - u/hig-bot" in r/theletterh
