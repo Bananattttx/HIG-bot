@@ -11,3 +11,4 @@ HIG_webhook = "###"
 HIG_ping = "###"
 
 HIG_token = "###"
+HIG_test_token = "###"
